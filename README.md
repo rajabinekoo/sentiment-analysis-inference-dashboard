@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yelp Reviews Sentiment Analysis - Dashboard
+
+This project is a Next.js dashboard designed to provide a user interface for monitoring and interacting with the following sentiment analysis applications:
+
+- [Sentiment Analysis Inference Server](https://github.com/rajabinekoo/sentiment-analysis-inference-server): A Python Flask server for performing sentiment analysis.
+- [Sentiment Analysis ML Spark Scala](https://github.com/rajabinekoo/sentiment-analysis-ml-spark-scala): A Spark and Scala application for sentiment analysis machine learning tasks.
+
+This dashboard aims to offer a centralized view of the status and results from these backend services.
 
 ## Getting Started
 
@@ -14,23 +21,16 @@ pnpm dev
 bun dev
 ```
 
+Copy the .local.env file to .env:
+
+```bash
+cp .local.env .env
+```
+
+Open the .env file and carefully configure the necessary environment variables. This is crucial for the dashboard to connect to the backend sentiment analysis services. Ensure that all placeholders or default values are replaced with your actual configuration.
+
 Open [http://localhost:3000](http://localhost:3000) with your value to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
